@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autobiography Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#Favorites">Favorites</a>
+            <a href="#Little Information About Me">Lil Info</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div id="header" class="jenet"></div>
+    <img src="" alt="jeaneth" class="profile-img">
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Jeaneth</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>I am a college student passionate about technology and eager to learn more about programming.<br>
+                Aspiring to build a future in Technology, I enjoy solving problems, creating applications, and 
+                under the College of Technology department.<br>
+                Exploring new innovations in the tech world. With determination and curiosity,<br>
+                I strive to grow my skills and make an impact as a programmer.</p>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/jeaneth.flores.165" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/jeexns_?igsh=cXd6YXdjbDYxZW10" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@jeexns?_t=ZS-90W3Hl2aEOe&_r=1" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+            
+            <a href="https://www.canva.com/design/DAGb_opbEl8/y2vDhjgszUIBYa4y9tgeIg/edit?utm_content=DAGb_opbEl8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn">Personal Data</a>
+        </div>  
+        
+
+    </section>
+
+    <section id="Favorites">
+        <h1>My Favorites:</h1>
+        
+        <div class="service-list">
+            <div class="service-item">
+                <i class="fa-solid fa-code"></i>
+                <h4>Fav. Foods</h4>
+                <p>Egg</p>
+                <p>Cake</p>
+                <p>Beans</p>
+                <p>Burger</p>
+                <p>Adobo</p>
+                <p>Humba</p>
+                <p>Eggplant</p>
+                <p>Lecheflan</p>
+                <p>Spaghetti</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-pencil"></i>
+                <h4>Fav. Colors</h4>
+                <p>Pink</p>
+                <p>Red</p>
+                <p>Blue</p>
+                <p>Green</p>
+                <p>Brown</p>
+                <p>Violet</p>
+                <p>Orange</p>
+                <p>Skyblue</p>
+                <p>Lavender</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <div class="skill-item">
+                <h3>Singing</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>Dancing</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>Typing</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 20%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch or get to know me more, feel free to reach out.</p>
+        <form action="https://formspree.io/f/mpwyejne" method="POST">
+            <!-- You can replace "https://formspree.io/f/mnqbboyz" with your Formspree form endpoint -->
+            
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message/Concern" required></textarea>
+            
+            <!-- Include a hidden field to specify the email recipient -->
+            <input type="hidden" name="_replyto" value="jeanethflores964@gmail.com">
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    
+    
+    <style>
+         .profile-img {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 140px; 
+            height: auto;
+            border-radius: 50%;
+            z-index: 10;
+        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #ff9a8b, #ffb3c1, #fdd5b1);
+        color: #333;
+        font-size: 1.6rem;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 5%;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    nav {
+        display: flex;
+        gap: 3rem;
+    }
+
+    nav a {
+        font-size: 1.8rem;
+        color: #ff6f91;
+        font-weight: 500;
+        transition: 0.3s ease;
+        border-bottom: 3px solid transparent;
+    }
+
+    nav a:hover,
+    nav a.active {
+        color: #ff66b2;
+        border-bottom: 3px solid #ff6f91;
+    }
+
+    section {
+        padding: 6rem 9%;
+    }
+
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    .home-content h1 {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 1.3;
+    }
+
+    .home-content h3 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+        line-height: 1.8;
+    }
+
+    .social-icons a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        background-color: transparent;
+        border: 0.2rem solid #ff6f91;
+        font-size: 2rem;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+        transition: 0.3s ease;
+        color: #ff6f91;
+    }
+
+    .social-icons a:hover {
+        color: white;
+        transform: scale(1.3) translateY(-5px);
+        background-color: #ff6f91;
+        box-shadow: 0 0 25px #ff6f91;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 1rem 2.8rem;
+        background-color: white;
+        border-radius: 4rem;
+        font-size: 1.6rem;
+        color: #ff6f91;
+        font-weight: 600;
+        border: 2px solid #ff6f91;
+        transition: 0.3s ease;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+
+    .btn:hover {
+        transform: scale(1.03);
+        background-color: #ff6f91;
+        color: white;
+        box-shadow: 0 0 25px #ff6f91;
+    }
+    .typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "Autobiography";
+    color: #ff6f91;
+    animation: words 10s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #ff6f91; 
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "College Student";
+    }
+    21%, 40%{
+        content: "1st year Student";
+    }
+    41%, 60%{
+        content: "Fan of Dancing";
+    }
+    61%, 80%{
+        content: "Heavy eater";
+    }
+    81%, 100%{
+        content: "Heavy Sleeper";
+    }  
+}
+@media (max-width: 100px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+#services, #skills, #education, #experience, #contact {
+    background-color: #f9f9f9; 
+}
+    .service-list {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .service-item {
+        background-color: #fff;
+        padding: 3rem;
+        border-radius: 10px;
+        text-align: center;
+        width: 45%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-item i {
+        font-size: 3rem;
+        color: #ff6f91;
+        margin-bottom: 1rem;
+    }
+
+    .service-item h3 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+    .skills-list, .experience-timeline, .education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skill-item, .experience-item, .education-item {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item h3, .experience-item h3, .education-item h3 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    background-color: #eee; 
+    border-radius: 10px;
+    width: 100%;
+    height: 1rem;
+}
+
+.progress {
+    background-color: #ff6f91; 
+    height: 100%;
+    border-radius: 10px;
+}
+    form input,
+    form textarea {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #ff6f91;
+        background-color: #fff;
+        font-size: 1.6rem;
+    }
+
+    form button {
+        background-color: #ff6f91;
+        color: white;
+        padding: 1rem 2.8rem;
+        border-radius: 4rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        border: 2px solid #ff6f91;
+        transition: 0.3s ease;
+    }
+
+    form button:hover {
+        background-color: white;
+        color: #ff6f91;
+        box-shadow: 0 0 25px #ff6f91;
+    }
+    </style>
+</body>
+</html>
